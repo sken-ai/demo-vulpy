@@ -6,7 +6,7 @@ services:
   - docker
 
 before_install:
-- pip install --upgrade --no-cache-dir --default-timeout=210 skencli
+  - pip install --upgrade --no-cache-dir --default-timeout=210 skencli
 
 script:
-- skencli
+  - skencli
