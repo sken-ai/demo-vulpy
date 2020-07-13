@@ -1,13 +1,26 @@
 version: 2.1
 jobs:
   scan:
-    machine: true
+    machine:
+      image: circleci/classic:201808-01
     steps:
 
       - checkout
+
       - run:
-          name: Install
-          command: pip install --user --upgrade skencli
+          name: Update pyenv
+          command: |
+            # Install pyenv-update to allow addition of python 3.7.0
+            git clone git://github.com/pyenv/pyenv-update.git $(pyenv root)/plugins/pyenv-update
+            pyenv update
+            pyenv install 3.6.9
+      - run:
+          name: Set Python Version
+          command: pyenv global 3.6.9
+
+      - run:
+          name: Install skencli
+          command: pip install --upgrade skencli
 
       - run:
           name: Scan
