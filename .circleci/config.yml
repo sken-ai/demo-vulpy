@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Install
-          command: pip install --upgrade skencli
+          command: pip install --user --upgrade skencli
 
       - setup_remote_docker:
           version: 19.03.8
