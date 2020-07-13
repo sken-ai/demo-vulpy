@@ -10,6 +10,7 @@ jobs:
           command: pip install --upgrade skencli
 
       - setup_remote_docker
+          version: 19.03.8
 
       - run:
           name: Scan
