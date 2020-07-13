@@ -1,17 +1,13 @@
 version: 2.1
 jobs:
   scan:
-    docker:
-      - image: circleci/python:3.6.9
+    machine: true
     steps:
 
       - checkout
       - run:
           name: Install
           command: pip install --user --upgrade skencli
-
-      - setup_remote_docker:
-          version: 19.03.8
 
       - run:
           name: Scan
