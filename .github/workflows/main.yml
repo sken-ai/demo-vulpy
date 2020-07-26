@@ -30,6 +30,8 @@ jobs:
         # Optional - x64 or x86 architecture, defaults to x64
         architecture: 'x64'
 
-    # Runs a set of commands using the runners shell
     - name: Install skencli
       run: pip3 install --upgrade skencli
+
+    - name: Run skencli
+      run: skencli
