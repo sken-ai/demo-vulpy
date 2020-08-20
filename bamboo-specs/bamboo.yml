@@ -12,6 +12,6 @@ stages:
 Build:
   tasks:
     - script:
-        - apt install python3-pip
+        - sudo apt install python3-pip -y
         - pip3 install --upgrade skencli
         - skencli
