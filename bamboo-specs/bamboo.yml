@@ -1,7 +1,7 @@
 ---
 version: 2
 plan:
-  project-key: demo-vulpy
+  project-key: VULPY
   key: VULPY
   name: Build the vulpy
 
