@@ -12,5 +12,5 @@ stages:
 Build:
   tasks:
     - script:
-        - pip3 install --upgrade skencli
+        - pip3 install --user --upgrade skencli
         - skencli
