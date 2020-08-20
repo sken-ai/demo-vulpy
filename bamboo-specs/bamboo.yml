@@ -1,16 +1,14 @@
 ---
 version: 2
 plan:
-  project-key: DEMO-VULPY
+  project-key: demo-vulpy
   key: VULPY
   name: Build the vulpy
 
-# List of plan's stages and jobs
 stages:
   - Build the vulpy stage:
     - Build
 
-#Job definition
 Build:
   tasks:
     - script:
