@@ -6,10 +6,10 @@ plan:
   name: Build the vulpy
 
 stages:
-  - Build the vulpy stage:
-    - Build
+  - Scan the vulpy stage:
+    - Scan
 
-Build:
+Scan:
   tasks:
     - script:
         - pip3 install --user --upgrade skencli
