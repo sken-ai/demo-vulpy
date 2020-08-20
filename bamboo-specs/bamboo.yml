@@ -13,4 +13,5 @@ Build:
   tasks:
     - script:
         - pip3 install --user --upgrade skencli
+        - export PATH="$HOME/.local/bin:$PATH"
         - skencli
