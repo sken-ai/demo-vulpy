@@ -98,4 +98,17 @@ After database initialization, three users are created:
 
 You can login with any user, the application doesn't have a permissions system, so, the three have the same permissions.
 
+Run full suite of skencli from command line
+------------
+
+::
+
+   cd vulpy/bad
+   // start web application
+   python ./bad/vulpy.py
+   // run below commands in a new command/terminal window
+   cd vulpy
+   skencli
+
+Windows user only: run **run-skencli.bat** in a command window or double click it.
 
