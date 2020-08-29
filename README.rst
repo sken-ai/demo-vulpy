@@ -103,7 +103,7 @@ Run full suite of skencli from command line
 
 ::
 
-   cd vulpy
+   cd vulpy/bad
    // start web application
    python ./bad/vulpy.py
    // run below commands in a new command/terminal window
