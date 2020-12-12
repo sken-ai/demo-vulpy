@@ -1,0 +1,17 @@
+trigger:
+- feature/add_azure_pipelines
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Bash@3
+  displayName: Install_skencli
+  inputs:
+    targetType: 'inline'
+    script: pip install wheel && pip install --upgrade skencli
+- task: Bash@3
+  displayName: Run_skencli
+  inputs:
+    targetType: 'inline'
+    script: ~/.local/bin/skencli
