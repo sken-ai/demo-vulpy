@@ -8,9 +8,12 @@ platform:
   arch: amd64
 
 steps:
-- name: greeting
+- name: Install skencli
   commands:
-  - echo hello world
+  - pip install --upgrade skencli
+- name: Run skencli
+  commands:
+  - skencli
 
 trigger:
   branch:
